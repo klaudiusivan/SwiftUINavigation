@@ -11,6 +11,12 @@
 		F8BF688C2AA4A833001FDECE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BF688B2AA4A833001FDECE /* ContentView.swift */; };
 		F8BF688E2AA4A834001FDECE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8BF688D2AA4A834001FDECE /* Assets.xcassets */; };
 		F8BF68922AA4A834001FDECE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8BF68912AA4A834001FDECE /* Preview Assets.xcassets */; };
+		F8BF68992AA4B0E2001FDECE /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BF68982AA4B0E2001FDECE /* DetailView.swift */; };
+		F8BF689B2AA4EB83001FDECE /* FeatureANavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BF689A2AA4EB83001FDECE /* FeatureANavigation.swift */; };
+		F8BF689F2AA4ECAD001FDECE /* SwiftUINavigationDoc.docc in Sources */ = {isa = PBXBuildFile; fileRef = F8BF689E2AA4ECAD001FDECE /* SwiftUINavigationDoc.docc */; };
+		F8BF68A12AA4EE9C001FDECE /* FeatureBNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BF68A02AA4EE9C001FDECE /* FeatureBNavigation.swift */; };
+		F8BF68A52AA4F5C8001FDECE /* AnotherDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BF68A42AA4F5C8001FDECE /* AnotherDetailView.swift */; };
+		F8BF68A72AA4FEBE001FDECE /* EachFeatureRoute+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BF68A62AA4FEBE001FDECE /* EachFeatureRoute+Helper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +26,12 @@
 		F8BF688D2AA4A834001FDECE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F8BF688F2AA4A834001FDECE /* SwiftUINavigation.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftUINavigation.entitlements; sourceTree = "<group>"; };
 		F8BF68912AA4A834001FDECE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F8BF68982AA4B0E2001FDECE /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		F8BF689A2AA4EB83001FDECE /* FeatureANavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureANavigation.swift; sourceTree = "<group>"; };
+		F8BF689E2AA4ECAD001FDECE /* SwiftUINavigationDoc.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = SwiftUINavigationDoc.docc; sourceTree = "<group>"; };
+		F8BF68A02AA4EE9C001FDECE /* FeatureBNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureBNavigation.swift; sourceTree = "<group>"; };
+		F8BF68A42AA4F5C8001FDECE /* AnotherDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnotherDetailView.swift; sourceTree = "<group>"; };
+		F8BF68A62AA4FEBE001FDECE /* EachFeatureRoute+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EachFeatureRoute+Helper.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +48,7 @@
 		F8BF687D2AA4A833001FDECE = {
 			isa = PBXGroup;
 			children = (
+				F8BF689E2AA4ECAD001FDECE /* SwiftUINavigationDoc.docc */,
 				F8BF68882AA4A833001FDECE /* SwiftUINavigation */,
 				F8BF68872AA4A833001FDECE /* Products */,
 			);
@@ -53,7 +66,9 @@
 			isa = PBXGroup;
 			children = (
 				F8BF68892AA4A833001FDECE /* SwiftUINavigationApp.swift */,
-				F8BF688B2AA4A833001FDECE /* ContentView.swift */,
+				F8BF68A62AA4FEBE001FDECE /* EachFeatureRoute+Helper.swift */,
+				F8BF689D2AA4EC59001FDECE /* FeatureBModule */,
+				F8BF689C2AA4EB89001FDECE /* FeatureAModule */,
 				F8BF688D2AA4A834001FDECE /* Assets.xcassets */,
 				F8BF688F2AA4A834001FDECE /* SwiftUINavigation.entitlements */,
 				F8BF68902AA4A834001FDECE /* Preview Content */,
@@ -67,6 +82,25 @@
 				F8BF68912AA4A834001FDECE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F8BF689C2AA4EB89001FDECE /* FeatureAModule */ = {
+			isa = PBXGroup;
+			children = (
+				F8BF689A2AA4EB83001FDECE /* FeatureANavigation.swift */,
+				F8BF688B2AA4A833001FDECE /* ContentView.swift */,
+				F8BF68A42AA4F5C8001FDECE /* AnotherDetailView.swift */,
+			);
+			path = FeatureAModule;
+			sourceTree = "<group>";
+		};
+		F8BF689D2AA4EC59001FDECE /* FeatureBModule */ = {
+			isa = PBXGroup;
+			children = (
+				F8BF68982AA4B0E2001FDECE /* DetailView.swift */,
+				F8BF68A02AA4EE9C001FDECE /* FeatureBNavigation.swift */,
+			);
+			path = FeatureBModule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +173,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8BF68A52AA4F5C8001FDECE /* AnotherDetailView.swift in Sources */,
 				F8BF688C2AA4A833001FDECE /* ContentView.swift in Sources */,
+				F8BF68A12AA4EE9C001FDECE /* FeatureBNavigation.swift in Sources */,
+				F8BF68992AA4B0E2001FDECE /* DetailView.swift in Sources */,
+				F8BF689B2AA4EB83001FDECE /* FeatureANavigation.swift in Sources */,
+				F8BF68A72AA4FEBE001FDECE /* EachFeatureRoute+Helper.swift in Sources */,
 				F8BF688A2AA4A833001FDECE /* SwiftUINavigationApp.swift in Sources */,
+				F8BF689F2AA4ECAD001FDECE /* SwiftUINavigationDoc.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,10 +325,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = klau.studio.SwiftUINavigation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -321,10 +363,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = klau.studio.SwiftUINavigation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
